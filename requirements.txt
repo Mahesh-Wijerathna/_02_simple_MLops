@@ -1,0 +1,8 @@
+# Python dependencies
+pandas
+scikit-learn
+fastapi
+uvicorn
+pytest
+pyyaml
+joblib
