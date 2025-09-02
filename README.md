@@ -2,6 +2,8 @@
 
 A complete machine learning project for house price prediction with training, evaluation, inference, and API deployment.
 
+<!-- Updated path resolution for GitHub Actions compatibility -->
+
 ## Project Structure
 ```
 ├── data/
