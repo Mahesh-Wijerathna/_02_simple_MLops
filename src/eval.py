@@ -3,8 +3,12 @@ import pandas as pd
 import os
 from sklearn.metrics import mean_squared_error
 
-MODEL_PATH = "../artifacts/model.pkl"
-DATA_PATH = "../data/data.csv"
+# Get the directory where this script is located
+SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
+PROJECT_ROOT = os.path.dirname(SCRIPT_DIR)
+
+MODEL_PATH = os.path.join(PROJECT_ROOT, "artifacts", "model.pkl")
+DATA_PATH = os.path.join(PROJECT_ROOT, "data", "data.csv")
 
 def main():
     if not os.path.exists(MODEL_PATH):

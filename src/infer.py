@@ -2,7 +2,11 @@ import joblib
 import pandas as pd
 import os
 
-MODEL_PATH = "../artifacts/model.pkl"
+# Get the directory where this script is located
+SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
+PROJECT_ROOT = os.path.dirname(SCRIPT_DIR)
+
+MODEL_PATH = os.path.join(PROJECT_ROOT, "artifacts", "model.pkl")
 
 def predict(sample: dict):
     if not os.path.exists(MODEL_PATH):
