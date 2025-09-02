@@ -3,8 +3,8 @@ import pandas as pd
 import os
 from sklearn.metrics import mean_squared_error
 
-MODEL_PATH = "artifacts/model.pkl"
-DATA_PATH = "data/data.csv"
+MODEL_PATH = "../artifacts/model.pkl"
+DATA_PATH = "../data/data.csv"
 
 def main():
     if not os.path.exists(MODEL_PATH):

@@ -6,14 +6,15 @@ from sklearn.model_selection import train_test_split
 from sklearn.metrics import mean_squared_error
 from model import get_model
 
-CONFIG_PATH = "configs/train.yaml"
-DATA_PATH = "data/data.csv"
-MODEL_PATH = "artifacts/model.pkl"
-METRICS_PATH = "artifacts/metrics.txt"
+# Paths relative to project root (go up one level from src/)
+CONFIG_PATH = "../configs/train.yaml"
+DATA_PATH = "../data/data.csv"
+MODEL_PATH = "../artifacts/model.pkl"
+METRICS_PATH = "../artifacts/metrics.txt"
 
 def main():
     # Create artifacts directory if it doesn't exist
-    os.makedirs("artifacts", exist_ok=True)
+    os.makedirs("../artifacts", exist_ok=True)
     
     # load config
     with open(CONFIG_PATH, "r") as f:

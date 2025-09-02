@@ -36,20 +36,17 @@ pip install -r requirements.txt
 
 ### 2. Train Model
 ```bash
-cd src
-python train.py
+python src/train.py
 ```
 
 ### 3. Evaluate Model
 ```bash
-cd src
-python eval.py
+python src/eval.py
 ```
 
 ### 4. Test Inference
 ```bash
-cd src
-python infer.py
+python src/infer.py
 ```
 
 ### 5. Run API Server

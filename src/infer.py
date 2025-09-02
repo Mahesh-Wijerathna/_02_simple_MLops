@@ -2,7 +2,7 @@ import joblib
 import pandas as pd
 import os
 
-MODEL_PATH = "artifacts/model.pkl"
+MODEL_PATH = "../artifacts/model.pkl"
 
 def predict(sample: dict):
     if not os.path.exists(MODEL_PATH):
